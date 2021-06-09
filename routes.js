@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import MainUsuario from './pages/produto/main';
+import MainProduto from './pages/produto/main';
 import DetalhesProduto from './pages/produto/detalhes';
 import CriarProduto from './pages/produto/criar';
 import EditarProduto from './pages/produto/editar';
