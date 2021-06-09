@@ -56,7 +56,7 @@ class CriarProduto extends Component {
                             />
                         </div>
                         <div className="produto-insert">
-                            <label htmlFor="descricao">Salário </label>
+                            <label htmlFor="descricao">Descrição </label>
                             <br />
                             <input
                                 type="text"
