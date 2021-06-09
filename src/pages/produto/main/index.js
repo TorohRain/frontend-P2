@@ -14,7 +14,7 @@ export default class Main extends Component {
     }
  
     componentDidMount() {
-        fetch(`https://backend-p1.herokuapp.com/produto/`)
+        fetch(`https://backend-p1.herokuapp.com/produto`)
             .then(produto =>
                 produto.json().then(produto => this.setState({ produto }))
             )
@@ -47,7 +47,7 @@ export default class Main extends Component {
                                 <th scope="row">{produto.id}</th>
                                 <td>{produto.nome}</td>
                                 <td>{produto.descricao}</td>
-                                <td>{produto.preco.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}</td>
+                                <td>{produto.preco}</td>
                                 <td>{produto.qtdemEstoque}</td>
                                 <td>{produto.ativo ? "Sim" : "Não"}</td>
                                 <td> <Link to={`/produtos/${produto.id}`}> <button type="button" class="btn btn-primary">Detalhes</button> </Link> </td>
